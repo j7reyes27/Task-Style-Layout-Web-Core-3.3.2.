@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.request-status--hidden {
+  display: none;
+}
+
+.page__body,
+.page__html {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.main__section--top .services__item--first,
+.main__section--top .services__item--last {
+  display: none;
+}
+
+.header {
+  background: #FFF;
+  width: 100%;
+  height: 4.0625rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__vertical-line{
+  display: flex;
+  align-self: center;
+  width: 0.125rem;
+  height: 2rem;
+  background: #EAEAEA;
+}
+
+.nav__vertical-line--hidden {
+  display: none;
+  align-self: center;
+  width: 0.125rem;
+  height: 2rem;
+  background: #EAEAEA;
+}
+
+.main {
+  background: #F8F8F8;
+  width: 100%;
+  min-height: 31.8125rem;
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-box__title {
+  margin-left: 1rem;
+  color: #1B1C21;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  flex-grow:1;
+}
+
+.services {
+  display: flex;
+  font-size: 16px;
+  overflow-x: auto;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 1rem;
+  color: #7E7E82;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.services h2 {
+  font-size: 1rem;
+}
+
+.services > :nth-child(2) {
+  border-radius: .4rem;
+  border: .13rem solid #B8FFEC;
+  background: #FFF;
+  padding: 1rem;
+  padding-right: 8rem;
+}
+
+.main__text {
+  color: #1B1C21;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+.second-text,
+.additional-text {
+  display: none;
+  color: #1B1C21;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+.bot-section {
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 2.8rem;
+}
+
+.main__image {
+  width: 100%;
+  height: auto;
+}
+
+.read-more-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-top: 2.124rem;
+}
+
+.read-more__text {
+  color: #1B1C21;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.2px;
+}
+
+@media (min-width: 576px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav__image--phone,
+  .nav__image--message,
+  .nav__image--contacts {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__spacer {
+    flex-grow: .5; /* consider making proper proportions */
+  }
+  .main {
+    max-width: 100%;
+  }
+
+  .main__image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .second-text {
+    display: flex;
+  }
+  .bot-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .nav__vertical-line--hidden {
+    display: flex;
+  }
+
+  .text-section {
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .main__section--top .services__item--first,
+  .main__section--top .services__item--last {
+    display: flex;
+  }
+
+  .request-status--hidden {
+    display: flex;
+  }
+  
+
+  .services > :nth-child(2) {
+    border-radius: 0;
+    border: 0;
+    background: none;
+  }
+
+  .services > :first-child {
+    border-radius: .4rem;
+    border: .13rem solid #B8FFEC;
+    background: #FFF;
+    padding: 1rem;
+    padding-right: 8rem;
+  }
+
+  .services {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-right: 37px;
+  }
+
+  .services > :nth-child(3),
+  .services > :nth-child(4),
+  .services > :nth-child(5) {
+    margin-right: 27px;
+    padding-right: 24px;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .second-text {
+    display: none;
+  }
+
+  .additional-text {
+    display: flex;
+  }
+
+  .header__request-status {
+    display: flex;
+  }
+
+  .request-status .request-status__text{
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+
+  .header__request-status__text--submit {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    max-width: 100%;
+  }
+}
