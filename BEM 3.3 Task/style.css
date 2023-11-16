@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 1rem;
 }
 
 .nav__vertical-line{
@@ -266,6 +267,10 @@
 
   .header__request-status__text--submit {
     margin-right: 32px;
+  }
+
+  .request-status__icon{
+    margin-right: 4rem;
   }
 }
 
